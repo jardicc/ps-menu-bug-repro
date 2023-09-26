@@ -1,0 +1,48 @@
+{
+	"manifestVersion": 5,
+	"name": "Test Plugin",
+	"id": "cz.bereza.test.plugin",
+	"version": "0.0.6",
+	"host": {
+		"app": "PS",
+		"minVersion": "24.4.1",
+		"data":{
+			"apiVersion": 2
+		}
+	},
+	"main": "index.html",
+	"requiredPermissions": {
+		"allowCodeGenerationFromStrings": true
+	},
+	"entryPoints": [
+		{
+			"type": "command",
+			"id": "runDialog",
+			"label": {
+				"default": "Test Plugin"
+			}
+		},
+		{
+			"type": "command",
+			"id": "resetStateFn",
+			"label": {
+				"default": "Reset options"
+			}
+		}
+	],
+	"icons": [{
+		"width": 48,
+		"height": 48,
+		"path": "icons/lightPlugin.png",
+		"scale": [1, 2],
+		"theme": ["darkest", "dark"],
+		"species": ["pluginList"]
+	}, {
+		"width": 48,
+		"height": 48,
+		"path": "icons/darkPlugin.png",
+		"scale": [1, 2],
+		"theme": ["lightest", "light"],
+		"species": ["pluginList"]
+	}]
+}
